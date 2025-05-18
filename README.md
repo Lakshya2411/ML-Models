@@ -24,7 +24,7 @@ To deeply understand how ML models work by **building them from the ground up**�
 | K-Nearest Neighbors      | Supervised   | 🚧 WIP | `knn.py` |
 | Naive Bayes              | Supervised   | 🚧 WIP | `naive_bayes.py` |
 | K-Means Clustering       | Unsupervised | 🚧 WIP | `kmeans.py` |
-| Principal Component Analysis (PCA) | Unsupervised | ✅ Completed | `pca.py` |
+| Principal Component Analysis (PCA) | Unsupervised | 🚧 WIP | `pca.py` |
 | Neural Network (1 hidden layer) | Supervised | 🚧 WIP | `neural_net.py` |
 
 > ⚠️ All implementations use only `NumPy` and `matplotlib` (for visualization).
