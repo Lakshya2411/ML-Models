@@ -16,14 +16,14 @@ To deeply understand how ML models work by **building them from the ground up**�
 
 | Model                     | Type         | Status       | Notebook / Script |
 |--------------------------|--------------|--------------|-------------------|
-| Linear Regression        | Supervised   | ✅ Completed | `linear_regression.py` |
-| Logistic Regression      | Supervised   | ✅ Completed | `logistic_regression.py` |
-| Perceptron               | Supervised   | ✅ Completed | `perceptron.py` |
+| Linear Regression        | Supervised   | 🚧 WIP | `linear_regression.py` |
+| Logistic Regression      | Supervised   | 🚧 WIP | `logistic_regression.py` |
+| Perceptron               | Supervised   | 🚧 WIP | `perceptron.py` |
 | Support Vector Machine   | Supervised   | 🚧 WIP       | `svm.py` |
 | Decision Tree            | Supervised   | 🚧 WIP       | `decision_tree.py` |
-| K-Nearest Neighbors      | Supervised   | ✅ Completed | `knn.py` |
-| Naive Bayes              | Supervised   | ✅ Completed | `naive_bayes.py` |
-| K-Means Clustering       | Unsupervised | ✅ Completed | `kmeans.py` |
+| K-Nearest Neighbors      | Supervised   | 🚧 WIP | `knn.py` |
+| Naive Bayes              | Supervised   | 🚧 WIP | `naive_bayes.py` |
+| K-Means Clustering       | Unsupervised | 🚧 WIP | `kmeans.py` |
 | Principal Component Analysis (PCA) | Unsupervised | ✅ Completed | `pca.py` |
 | Neural Network (1 hidden layer) | Supervised | 🚧 WIP | `neural_net.py` |
 
