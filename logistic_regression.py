@@ -60,7 +60,7 @@ weights = logistic_regression(X_train, y_train, learning_rate=0.1, epochs=1000)
 
 preds = predict(X_train, weights)
 
-print("\nPredictions:", preds.ravel())  # Flatten for display
+print("\nPredictions:", preds.ravel())  
 
 
 
