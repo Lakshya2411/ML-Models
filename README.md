@@ -18,7 +18,7 @@ To deeply understand how ML models work by **building them from the ground up**�
 | ---------------------------------- | ------------ | -------- | ------------------------ |
 | Linear Regression                  | Supervised   | Finished | `linear_regression.py`   |
 | Logistic Regression                | Supervised   | Finished | `logistic_regression.py` |
-| Perceptron                         | Supervised   | 🚧 WIP   | `perceptron.py`          |
+| Perceptron                         | Supervised   | Finished | `perceptron.py`          |
 | Support Vector Machine             | Supervised   | 🚧 WIP   | `svm.py`                 |
 | Decision Tree                      | Supervised   | 🚧 WIP   | `decision_tree.py`       |
 | K-Nearest Neighbors                | Supervised   | 🚧 WIP   | `knn.py`                 |
