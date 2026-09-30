@@ -1,38 +1,44 @@
-# 🧠 ML From Scratch — Practice ML Models Without Scikit-Learn
+# ML From Scratch
 
-This repository contains implementations of popular machine learning algorithms **from scratch** using **pure Python and NumPy**, focusing solely on **mathematical foundations**—no machine learning libraries like `scikit-learn`, `tensorflow`, or `pytorch` are used.
+Classic machine learning algorithms implemented **from their mathematical definitions**, using only Python and NumPy — no scikit-learn, TensorFlow or PyTorch. The goal is to understand what libraries do under the hood.
 
-## 🎯 Goal
+## Implemented
 
-To deeply understand how ML models work by **building them from the ground up**—every algorithm is written based on its mathematical formulation, including:
+| Algorithm | File | How it's implemented |
+|---|---|---|
+| Linear Regression | `linear_regression.py` | Closed-form least squares: slope = covariance(X, Y) / variance(X), intercept from the means. Pure Python, no libraries |
+| Logistic Regression | `logistic_regression.py` | Sigmoid + binary cross-entropy loss, trained with batch gradient descent. Bias handled by adding a column of ones |
+| Perceptron | `perceptron.py` | Step activation with the perceptron learning rule (`w += lr × error × x`), trained on the AND gate |
 
-- Loss functions
-- Gradient descent
-- Linear algebra
-- Calculus
-- Probability & statistics
+## Run them
 
-## 📚 What You'll Find
+```bash
+pip install numpy
+python linear_regression.py
+python logistic_regression.py
+python perceptron.py
+```
 
-| Model                              | Type         | Status   | Notebook / Script        |
-| ---------------------------------- | ------------ | -------- | ------------------------ |
-| Linear Regression                  | Supervised   | Finished | `linear_regression.py`   |
-| Logistic Regression                | Supervised   | Finished | `logistic_regression.py` |
-| Perceptron                         | Supervised   | Finished | `perceptron.py`          |
-| Support Vector Machine             | Supervised   | 🚧 WIP   | `svm.py`                 |
-| Decision Tree                      | Supervised   | 🚧 WIP   | `decision_tree.py`       |
-| K-Nearest Neighbors                | Supervised   | 🚧 WIP   | `knn.py`                 |
-| Naive Bayes                        | Supervised   | 🚧 WIP   | `naive_bayes.py`         |
-| K-Means Clustering                 | Unsupervised | 🚧 WIP   | `kmeans.py`              |
-| Principal Component Analysis (PCA) | Unsupervised | 🚧 WIP   | `pca.py`                 |
-| Neural Network (1 hidden layer)    | Supervised   | 🚧 WIP   | `neural_net.py`          |
+Example output:
 
-> ⚠️ All implementations use only `NumPy` and `matplotlib` (for visualization).
+```text
+$ python linear_regression.py
+Model: Y = 2.20 + 0.60 * X
 
-## 🛠️ How to Use
+$ python logistic_regression.py
+Epoch 900 => Loss: 0.1196
+Predictions: [0 0 0 1 1]
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/ml-from-scratch.git
-   cd ml-from-scratch
-   ```
+$ python perceptron.py
+Input: [1 1], Prediction: 1      # learned the AND gate
+```
+
+## Planned next
+
+- K-Nearest Neighbors
+- K-Means clustering
+- Naive Bayes
+- Principal Component Analysis (PCA)
+- Decision Tree
+- Support Vector Machine
+- Neural network with one hidden layer (backpropagation)
